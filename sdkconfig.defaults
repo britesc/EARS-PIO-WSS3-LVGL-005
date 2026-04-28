@@ -1,0 +1,35 @@
+# =============================================================================
+# Revision Number: 1003
+# Project:         EARS-PIO-WSS3-LVGL-005
+# Description:     ESP-IDF SDK Default Configuration
+# =============================================================================
+
+# Flash size
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="16MB"
+
+# Flash mode
+CONFIG_ESPTOOLPY_FLASHMODE_QIO=y
+
+# CPU speed
+CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240=y
+
+# Partition table
+CONFIG_PARTITION_TABLE_SINGLE_APP=n
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="default_16MB.csv"
+
+# PSRAM - Octal SPI
+CONFIG_SPIRAM=y
+CONFIG_SPIRAM_MODE_OCT=y
+CONFIG_SPIRAM_SPEED_80M=y
+
+# Use USB Serial/JTAG as the console output
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_SECONDARY_NONE=y
+
+# Enable both cores
+CONFIG_FREERTOS_UNICORE=n
+
+# Log output level
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
